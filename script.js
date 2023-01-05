@@ -29,3 +29,8 @@ if (listItemsArray.length > 0) {
     input.focus();
     return;
   }
+
+
+  msg.textContent = "";
+  form.reset();
+  input.focus();
