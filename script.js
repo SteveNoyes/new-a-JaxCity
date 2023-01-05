@@ -2,7 +2,7 @@ const form = document.querySelector(".top-banner form");
 const input = document.querySelector(".top-banner input");
 const msg = document.querySelector(".top-banner .msg");
 const list = document.querySelector(".ajax-section .cities");
-
+const apiKey = "3c3b59368de5aa9f8148d42ba4b1b803";
 form.addEventListener("submit", e => {
   e.preventDefault();
   let inputVal = input.value;
@@ -68,7 +68,7 @@ form.addEventListener("submit", e => {
       msg.textContent = "Input valid search parameters.";
     });
 
-    
+
   msg.textContent = "";
   form.reset();
   input.focus();
