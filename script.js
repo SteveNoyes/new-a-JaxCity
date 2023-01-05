@@ -20,3 +20,12 @@ if (listItemsArray.length > 0) {
     }
     return content == inputVal.toLowerCase();
   });
+
+  if (filteredArray.length > 0) {
+    msg.textContent = `You already checked the weather for ${
+      filteredArray[0].querySelector(".city-name span").textContent
+    } provide country code`;
+    form.reset();
+    input.focus();
+    return;
+  }
